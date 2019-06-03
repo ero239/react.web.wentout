@@ -1,0 +1,53 @@
+.mCarouselContainer {
+    margin: 0;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+}
+.mCarouselContainerWrapper {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.mCarouselSlide {
+    background: white;
+    height: auto;
+    width: auto;
+}
+.mCarouselImage {
+    height: auto;
+    margin: auto;
+    max-width: 1280px;
+    min-width: 300px;
+    width: auto;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+	.mCarouselContainer {
+		background-color: white;
+        width: 100%;
+        min-width: 300px;
+        max-width: 1680px;
+		height: 70vh;
+		min-height: 350px;
+		max-height: 400px;
+	}
+}
+@media (min-width: 600px) and (max-width: 800px) {
+	.mCarouselContainer {
+		min-height: 400px;
+		max-height: 450px;
+	}
+}
+@media (min-width: 800px) and (max-width: 1024px) {
+	.mCarouselContainer {
+		min-height: 450px;
+		max-height: 600px;
+	}
+}
+@media (min-width: 1024px) {
+	.mCarouselContainer {
+		min-height: 600px;
+		max-height: 1050px;
+	}
+}

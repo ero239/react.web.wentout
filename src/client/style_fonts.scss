@@ -1,0 +1,97 @@
+
+
+@media(min-width: 0px){
+    h1{
+        font-size: 23px;
+        line-height: 26px;
+    }
+    h2{
+        font-size: 21px;
+        line-height: 24px;
+    }
+    h3{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    a{
+        font-size: 16px;
+        line-height: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+    }
+    /* time{
+        font-size: 15px;
+        line-height: 20px;
+    } */
+    span{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    button{
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        font-family: 'Source Sans Pro';
+    }
+    .h3{
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+    }
+    p{
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: -.004em;
+    }
+    .aLink{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .aButton{
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.2px;
+    }
+    .aTitle{
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .aTime{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .aNumber{
+        font-size: 13px;
+        line-height: 15px;
+    }
+}
+@media(min-width: 768px){
+    h1{
+        font-size: 27px;
+        line-height: 31px;
+    }
+    h2{
+        font-size: 23px;
+        line-height: 28px;
+    }
+    h3{
+        font-size: 19px;
+        line-height: 22px;
+    }
+    p{
+        font-size: 18px;
+	    line-height: 24px;
+    }
+    .h3{
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: 0.3px;
+    }
+    
+    .aTime{
+        font-size: 14px;
+	    line-height: 17px;
+    }
+}

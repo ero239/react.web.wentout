@@ -1,0 +1,290 @@
+.eventBar {
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(77, 77, 77, 0.418);
+    background-color: white;
+    display: grid;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    text-decoration: none;
+    color: black;
+    &:last-child{
+        margin: auto 10px auto auto;
+    }
+}
+.eventBarHeaderGrid {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100%;
+    padding-right: 5px;
+}
+.eventBarHeaderCreatorNicknameGrid {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.eventBarHeaderTimeGrid {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5px 0 0;
+}
+.eventBarCreatorPhotoGrid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;  
+}
+.eventBarTitleGrid {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.eventBarTitle {
+    font-weight: 400;
+    white-space: pre-line;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+}
+.eventBarPhotoGrid {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+.eventBarLocationGrid {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+.eventBarLocationValueGrid {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.eventBarLocationValue {
+    font-weight: lighter;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+}
+.eventBarGuestsGrid {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+.eventBarGuestsValueGrid {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.eventBarFooter {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    a {
+        margin: 0;
+        text-decoration-style: none;
+    }
+}
+.eventBarFooterButtonOpenGrid {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+.eventBarFooterButton {
+    border-radius: 10px;
+    background-color: rgb(221, 221, 221);
+    text-decoration-line: none;
+    margin: 0;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+.eventBarFooterButtonShowonmapGrid {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media(min-width: 0px){
+    .eventBar {
+        width: 300px;
+        height: 185px;
+        grid-template-columns: 75px 150px 75px;
+        grid-template-rows: 25px 65px 25px 25px 45px;
+    }  
+    .eventBarCreatorPhotoGrid {
+        img {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .eventBarTitle {
+        width: 140px;
+        height: 39px;
+    }
+    .eventBarPhotoGrid {
+        img {
+            border-radius: 10%;
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .eventBarLocationValue{
+        width: 220px;
+    }
+    .eventBarFooterButton{
+        width: 130px;
+        height: 35px;
+    }
+}
+
+@media(min-width: 768px){
+    .eventBar {
+        width: 355px;
+        height: 220px;
+        grid-template-columns: 85px 180px 90px;
+        grid-template-rows: 25px 85px 25px 25px 60px;
+        &:hover {
+            transform: translateY(-10px);
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            -o-transform: translateY(-10px);
+            transition: all 200ms ease-in;
+            -webkit-transition: all 200ms ease-in;
+            -moz-transition: all 200ms ease-in;
+            -ms-transition: all 200ms ease-in;
+            -o-transition: all 200ms ease-in;
+        }
+    }
+    .eventBarCreatorPhotoGrid {
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    .eventBarTitle {
+        width: 180px;
+        height: 66px;
+    }
+    .eventBarPhotoGrid {
+        >img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    .eventBarLocationValue {
+        width: 245px;
+    }
+    .eventBarFooterButton {
+        width: 150px;
+        height: 45px;
+    }
+}
+
+
+
+
+
+@media(min-width: 0px){
+    .eventBarShowAll{
+        margin: auto;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .eventBarShowAllButton{
+        margin: -50px 0 0 0;
+        background-color: transparent !important;
+        width: 75px;
+        height: 75px;
+        border: 1px solid #5246c3;
+        border-radius: 99999px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            color: #5246c3;
+            font-size: 14px;
+        }
+        i{
+            display: none;
+            width: 32px;
+            height: 32px;
+            margin: 0 0 0 -3px;
+            background-repeat: no-repeat;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAVFBMVEUAAABTR8RJSchURcJSR8NORcRPRMFSRsNSRsNURcVSRsNVQsZJSbZTRMNSRsNSRsNSRsNTRsNSR8RVVdVTRMJRR8NTSMJSRsNVScJOTsRSRsMAAABqyuaPAAAAGnRSTlMAKw5D2Rot99pG9hsHImr90c/OBkdILvgqDTXBfigAAAABYktHRACIBR1IAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH4wMDDjMTc1ofVgAAAFVJREFUOMtjYBikgJEJvzyzFAsrXgVs7FIc+FVwcklxcNNeBTsdVfDw4gR8/KDwEJDCCwQZhAgpECZkBW4gQsAbAy0vSqG8mDiBJEcw0TJISDIMKgAA4UoOXuwsxuAAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDMtMDNUMTM6NTE6MTkrMDE6MDABUke4AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTAzLTAzVDEzOjUxOjE5KzAxOjAwcA//BAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=);
+        }
+        &:hover{
+            span{
+                display: none;
+            }
+            i{
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

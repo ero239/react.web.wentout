@@ -1,0 +1,18 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false
+      }
+    ],
+    "stage-0",
+    "react",
+    "stage-3"
+  ],
+  "retainLines": true,
+  "plugins": [
+    "react-hot-loader/babel",
+    "emotion"
+  ]
+}

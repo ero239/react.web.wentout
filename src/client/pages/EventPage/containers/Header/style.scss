@@ -1,0 +1,113 @@
+.eMain {
+    display: -ms-grid;
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    padding: 80px 5px 0 5px;
+}
+.eMainTitleGrid {
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-content: flex-start;
+    margin: 0 0 15px 0;
+}
+.eMainTitleValue {
+    font-weight: 550;
+    margin: 0;
+    padding: 0 15px 0 20px;
+}
+.eMainGrid {
+    display: -ms-grid;
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+}
+.eMainColLeft {
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-content: space-around;
+}
+.eMainColCenter {
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-content: center;
+}
+.eMainColRight {
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-content: space-around;
+}
+.eMainFlex {
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.eMainPhoto {
+    border-radius: 15%;
+    box-shadow: 3px 3px 10px rgb(189, 188, 188);
+    height: 30vw;
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 80px;
+    min-width: 80px;
+    width: 30vw;
+}
+.eMainFixTitles {
+    color: rgb(92, 92, 92);
+    font-weight: 450;
+    margin: 0;
+}
+.eMainValues {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+    width: 70px;
+    word-wrap: none;
+    text-overflow: ellipsis;
+}
+
+@media(min-width: 400px){
+    .eMain {
+        padding: 100px 5px 0 5px;
+    }
+}
+
+@media(min-width: 768px){
+    .eMain {
+        padding-top: 100px;
+    }
+    .eMainTitleValue {
+        font-weight: 600;
+    }
+    .eMainValues {
+        font-size: 19px;
+    }
+}
+@media(min-width: 992px){
+    .eMain {
+        padding-top: 110px;
+    }
+}

@@ -1,0 +1,266 @@
+@media (min-width: 0px) and (max-width: 600px) {
+	.mAppContainer {
+		min-width: 320px;
+		min-height: 750px;
+	}
+}
+
+
+.mAppContainerFlex {
+	align-items: center;
+	display: -webkit-flex;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	margin: auto;
+	max-width: 1500px;
+	width: 100%;
+	z-index: 10;
+}
+.mAppTextColumn {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	min-height: 170px;
+	width: 100%;
+}
+.mAppTextColumnItem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+.mAppTextColumnItemWrapper{
+	height: auto;
+    width: auto;
+    z-index: 1;
+}
+.mAppTextColumnItemObject1{
+	-moz-backface-visibility: hidden;
+	-moz-perspective: 1000px;
+	-ms-backface-visibility: hidden;
+	-ms-perspective: 1000px;
+	-ms-transform-origin: 10% 160%;
+	-o-transform-origin: 10% 160%;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000px;
+	-webkit-transform-origin: 10% 160%;
+    backface-visibility: hidden;
+    background:#e362a6;
+    background-image:-o-linear-gradient(137deg,#e362a6,#f7b7a6);
+    background-image:-moz-linear-gradient(137deg,#e362a6,#f7b7a6);
+    background-image:-webkit-linear-gradient(137deg,#e362a6,#f7b7a6);
+    background-image:linear-gradient(137deg,#e362a6,#f7b7a6);
+	border-radius: 0 40px;
+	border: 0;
+	padding: 0;
+	perspective: 1000px;
+    pointer-events: none;
+    position: absolute;
+	margin: auto;
+	transform-origin: 10% 160%;
+	transform: rotate(-30deg);
+	z-index: -1;
+}
+.mAppTextColumnItemObject2{
+	-moz-backface-visibility: hidden;
+	-moz-perspective: 1000px;
+	-ms-backface-visibility: hidden;
+	-ms-perspective: 1000px;
+	-ms-transform-origin: 10% 160%;
+	-o-transform-origin: 10% 160%;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000px;
+	-webkit-transform-origin: 10% 160%;
+	backface-visibility: visible;
+	background:#df3f94;
+    background-image:-o-linear-gradient(100deg,#0078ca,#df3f94);
+    background-image:-moz-linear-gradient(100deg,#0078ca,#df3f94);
+    background-image:-webkit-linear-gradient(100deg,#0078ca,#df3f94);
+    background-image:linear-gradient(100deg,#0078ca,#df3f94);
+	border-radius: 50%;
+	border: 0;	
+	padding: 0;
+	perspective: 1000px;
+	pointer-events: none;
+	position: absolute;
+	transform-origin: 10% 160%;
+	transform: rotate(-30deg);
+	z-index: -1;
+}
+.mAppTextColumnItemObject3{
+	-moz-backface-visibility: hidden;
+	-moz-perspective: 1000px;
+	-ms-backface-visibility: hidden;
+	-ms-perspective: 1000px;
+	-ms-transform-origin: 10% 160%;
+	-o-transform-origin: 10% 160%;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000px;
+	-webkit-transform-origin: 10% 160%;
+	backface-visibility: hidden;
+	background:#ec7758;
+    background-image:-o-linear-gradient(-45deg,#f0c01e 0%,#ec7758 100%);
+    background-image:-moz-linear-gradient(-45deg,#f0c01e 0%,#ec7758 100%);
+    background-image:-webkit-linear-gradient(-45deg,#f0c01e 0%,#ec7758 100%);
+    background-image:linear-gradient(-45deg,#f0c01e 0%,#ec7758 100%);
+	border-radius: 0 40px;
+	border: 0;
+	padding: 0;
+	perspective: 1000px;
+	pointer-events: none;
+	position: absolute;
+	transform-origin: 10% 160%;
+	transform: rotate(10deg);
+	z-index: -1;
+}
+.mAppImgColumn {
+	align-items: center;
+	display: -webkit-flex;
+	display: flex;
+	height: auto;
+	width: 100%;
+	z-index: 1;
+}
+.mAppImgColumnWrapper {
+	align-items: flex-end;
+	display: flex;
+	height: 460px;
+	justify-content: center;
+	width: 100%;
+}
+.mAppFirstLine {
+	color: rgb(20, 20, 20);
+	font-weight: 700;
+	letter-spacing: 0.3px;
+	margin: 0;
+	white-space: nowrap;
+}
+.mAppSecondLine {
+	color: rgb(43, 44, 51);
+	font-weight: 100;
+	letter-spacing: 0.3px;
+	margin-top: 5%;
+	white-space: wrap;
+}
+
+@media (min-width: 0px) {
+	.mAppContainer {
+		margin-top: 20px;
+		width: 100%;
+		height: 120vh;
+        max-height: 1024px;
+	}
+	.mAppContainerFlex {
+		flex-direction: column;
+	}
+	.mAppTextColumnItemObject1{
+        left: 40%;
+		height: 182px;
+		width: 268px;
+	}
+	.mAppTextColumnItemObject2{
+        left: 50%;
+        height: 280px;
+		width: 280px;
+	}
+	.mAppTextColumnItemObject3{
+        left: 5%;
+        height: 182px;
+		width: 288px;
+	}
+	.mAppFirstLine {
+        font-size: 34px;
+        line-height: 35px;
+	}	
+	.mAppSecondLine {
+        font-size: 18px;
+        line-height: 22px
+	}
+	.mAppImg {
+		height: 450px;
+		z-index: 2;
+	}
+	.mAppImgVideo {
+		position: absolute;
+		width: auto;
+		height: 438px;
+		border-radius: 5%;
+		z-index: 1;
+    }
+}
+@media (min-width: 768px) {
+	.mAppContainerFlex{
+		flex-direction: row;
+	}
+	.mAppTextColumnItemObject1{
+        left: 25%;
+		height: 302px;
+		width: 498px;
+	}
+	.mAppTextColumnItemObject2{
+        left: 25%;
+		height: 480px;
+		width: 480px;
+	}
+	.mAppTextColumnItemObject3{
+        left: 5%;
+		width: 498px;
+		height: 302px;
+	}	
+	.mAppFirstLine {
+        font-size: 48px;
+        line-height: 52px;
+	}
+	.mAppSecondLine {
+		white-space: pre;
+        font-size: 24px;
+        line-height: 26px;
+	}
+}
+@media (min-width: 992px) {
+	.mAppContainer {
+		min-height: 1000px;
+	}
+}
+@media (min-width: 1200px) {	
+	.mAppImg {
+		max-height: 600px;
+    }
+
+}
+@media(min-width: 1500px){
+    .mAppTextColumnItemObject1{
+        left: 27%;
+	}
+	.mAppTextColumnItemObject2{
+        left: 27%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+	.mAppContainer {
+		min-height: 850px;
+	}
+}
+@media (min-width: 480px) {
+	.mAppContainer {
+		margin-top: 40px;
+		height: 80vh;
+	}
+}
+@media (min-width: 850px) {
+	.mAppContainerGrid {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.mAppImg {
+		height: 500px;
+	}
+	.mAppImgVideo {
+		width: auto;
+		height: 534px;
+	}
+}

@@ -1,0 +1,310 @@
+@media (min-width: 0px) {
+	.aboutContainer {
+		width: 100%;
+		height: auto;
+		cursor: default;
+	}
+	.aboutContainerFlex {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 0 auto;
+		-ms-flex: 1 0 auto;
+		flex: 1 0 auto;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.aboutHeader {
+		background-color: #fff;
+		border-bottom: 1px solid #efefef;
+		height: 77px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+	}
+	.aboutMain {
+		margin-top: 0;
+		position: relative;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 0 auto;
+		-ms-flex: 1 0 auto;
+		flex: 1 0 auto;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-font-smoothing: antialiased;
+	}
+	.aboutMainSideFlex {
+		height: auto;
+		padding-bottom: 0;
+		padding-top: 78px;
+		position: static;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		pointer-events: none;
+		width: 100%;
+		z-index: 1;
+	}
+	.aboutMainNavbarWrapper {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		display: inline-block;
+		height: auto;
+		min-height: 0;
+		padding: 0;
+		width: 100%;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 0 auto;
+		-ms-flex: 1 0 auto;
+		flex: 1 0 auto;
+		margin: 0 auto;
+		position: relative;
+	}
+	.aboutMainNavbar {
+		float: none;
+		display: block;
+		margin: 0 !important;
+		background: 0 0;
+		border: 0;
+		width: 100%;
+		height: auto;
+		padding-right: 0;
+		pointer-events: initial;
+	}
+	.aboutMainNavbarFlex {
+		margin: 0;
+		border: 0;
+		width: 100%;
+		height: auto;
+		h2 {
+			&:first-child {
+				display: block;
+			}
+			color: #999;
+			font-size: 14pt;
+			font-weight: initial;
+			margin: 0;
+			padding: 16px;
+			text-transform: uppercase;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		i {
+			float: left;
+			width: 22px;
+			height: 18px;
+			margin-right: 8px;
+			margin-left: 10px;
+			background: url('https://instagram.com/static/images/glyphs/disclosure-down@2x.png/9ae8409fbb3a.png') no-repeat center;
+			background-size: 14px 14px;
+		}
+	}
+	.aboutMainNavbarFlexI {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	.aboutMainNavbarLinks {
+		border-left: 2px solid transparent;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		color: #262626;
+		font-size: 16px;
+		display: block;
+		padding: 16px 16px 16px 30px;
+		width: 100%;
+		text-decoration: none !important;
+		&:active {
+			border-left-color: #262626;
+			font-weight: 600;
+		}
+		&:hover {
+			border-left-color: #dbdbdb;
+			color: black;
+		}
+	}
+	.aboutMainNavbarLinksActive {
+		font-weight: 600;
+		border-left-color: black;
+	}
+	.aboutMainContentFlex {
+		width: 100%;
+		height: auto;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		background-color: #fff;
+		border: 1px solid #efefef;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 0 16px 20px;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 0 auto;
+		-ms-flex: 1 0 auto;
+		flex: 1 0 auto;
+		margin: 0 auto;
+		position: relative;
+	}
+	.aboutMainContentSection {
+		margin-left: 0;
+		margin-right: 0;
+		padding: 20px 0;
+		color: #262626;
+		h1 {
+			font-weight: 400;
+			font-size: 20pt;
+		}
+		h2 {
+			font-size: 16pt;
+			font-weight: 400;
+			margin-bottom: 12px;
+			margin-top: 28px;
+		}
+		p {
+			margin-left: 20px;
+			font-size: 12pt;
+		}
+		li {
+			font-size: 12pt;
+		}
+	}
+	.aboutFooter {
+		font-size: 12px;
+		height: 77px;
+	}
+	.aboutFooterCopyright {
+		text-align: center;
+		width: 100%;
+		color: #262626;
+		display: inline-block;
+		font-weight: 600;
+		margin-top: 30px;
+		text-transform: uppercase;
+	}
+}
+@media (min-width: 768px) {
+	.aboutMain {
+		margin-top: 137px;
+		position: relative;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 0 auto;
+		-ms-flex: 1 0 auto;
+		flex: 1 0 auto;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-font-smoothing: antialiased;
+	}
+	.aboutMainSideFlex {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		height: 100%;
+		pointer-events: none;
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+		display: block;
+		padding: 0;
+	}
+	.aboutMainNavbarWrapper {
+		height: 100%;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 0 auto;
+		-ms-flex: 1 0 auto;
+		flex: 1 0 auto;
+		margin-left: auto;
+		position: relative;
+		width: 850px;
+		display: block;
+	}
+	.aboutMainNavbar {
+		float: left;
+		height: 100%;
+		padding-right: 0;
+		pointer-events: initial;
+		width: 256px;
+		display: block;
+	}
+	.aboutMainNavbarFlex {
+		border-right: 1px solid #efefef;
+		height: 100%;
+		width: 220px;
+		h2 {
+			display: block !important;
+			color: #999;
+			font-size: 16px;
+			font-weight: initial;
+			padding: 36px 16px 16px 16px;
+			text-transform: uppercase;
+		}
+		ul {
+			display: block !important;
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			list-style: none;
+		}
+		i {
+			display: none;
+		}
+	}
+	.aboutMainContentFlex {
+		border: 1px solid #efefef;
+		border-radius: 3px;
+		background-color: #fff;
+		border: 1px solid #efefef;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 0 16px 20px;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 0 auto;
+		-ms-flex: 1 0 auto;
+		flex: 1 0 auto;
+		margin: 0 auto;
+		position: relative;
+		width: 850px;
+		display: block;
+	}
+	.aboutMainContentSection {
+		color: #262626;
+		margin-left: 205px;
+		padding: 30px 50px;
+		&:first-child {
+			margin-top: 0;
+		}
+		h1 {
+			font-size: 32px;
+			font-weight: 400;
+			margin-bottom: 20px;
+			margin-top: 28px;
+		}
+		h2 {
+			font-size: 24px;
+			font-weight: 400;
+			margin-bottom: 12px;
+			margin-top: 40px;
+		}
+		p {
+			margin-left: 30px;
+		}
+	}
+}
