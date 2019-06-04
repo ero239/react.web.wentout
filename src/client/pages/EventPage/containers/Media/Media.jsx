@@ -107,12 +107,12 @@ export default class Media extends React.Component {
   componentDidMount = () => {
     console.log('did Mount Event');
     try {
-      this.setState({
+      /* this.setState({
         array: showMediaFunction(this.props.id, 0, 15),
         loaded: true,
         skip: (this.state.skip += 15),
         limit: (this.state.limit += 15)
-      });
+      }); */
       this.mediacontainer.addEventListener('scroll', this.handleScroll);
     } catch (error) {
       console.log('error event media');

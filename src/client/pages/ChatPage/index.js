@@ -17,10 +17,10 @@ export default class ChatPage extends PureComponent {
     };
   }
   componentDidMount = () => {
-    var _skip = 0;
+    /* var _skip = 0;
     var _limit = 30;
-    /* var messeges = messegesFunctions(_skip, _limit); */
-/*     this.setState({
+    var messeges = messegesFunctions(_skip, _limit);
+     this.setState({
       _messages: messeges
     }); */
   };

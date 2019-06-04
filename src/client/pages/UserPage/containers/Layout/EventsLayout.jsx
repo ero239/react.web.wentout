@@ -1,8 +1,6 @@
 import React, {PureComponent} from 'react';
-import classNames from 'classnames';
 
-import styleHeader from '../../EventPage/style.scss';
-import style from '../style.scss';
+import style from './style.scss';
 
 export default class EventsLayout extends PureComponent {
   constructor(props) {

@@ -1,0 +1,87 @@
+.uHeaderGrid{
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px auto auto auto;
+}
+.uHeaderButtonsGrid{
+    margin: 30px 0 0 0;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    height: auto;
+    justify-content: center;
+    width: auto;
+}
+.uHeaderButton{
+    align-items: center;
+    background-color: rgb(91, 136, 189);
+    border-radius: 40px;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    margin: 0 10px;
+    outline: none;
+    width: 95px;
+    span{
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+}
+.uHeaderDescriptionGrid{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+}
+.uHeaderDescriptionNameFlex{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0 0 20px;
+    p {
+        font-size: 13pt;
+        font-weight: 600;
+    }
+}
+.uHeaderDescriptionValueFlex{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    padding: 15px 0 0 0;
+    p {
+        font-size: 11pt;
+    }
+}
+
+@media(min-width: 0px) {
+    .uHeaderGrid{
+        padding: 80px 5px 0 5px;
+    }
+}
+
+@media(min-width: 768px) {
+    .uHeaderGrid{
+        padding-top: 100px;
+    }
+    .uHeaderButton{
+        border-radius: 40px;
+        height: 40px;
+        width: 110px;
+        span{
+            font-size: 16px;
+        }
+        
+    }
+}

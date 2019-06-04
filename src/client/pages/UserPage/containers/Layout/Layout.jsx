@@ -4,8 +4,7 @@ import classNames from 'classnames';
 import EventsLayout from './EventsLayout.jsx';
 import EventsMediaLayout from './EventsMediaLayout.jsx';
 
-import styleHeader from '../../EventPage/style.scss';
-import style from '../style.scss';
+import style from './style.scss';
 
 export default class Layout extends PureComponent {
   constructor(props) {

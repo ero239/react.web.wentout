@@ -4,8 +4,8 @@ import {isIOS} from 'react-device-detect';
 import style from './style.scss';
 
 import NavBar from '../../components/NavBar/NavBarEvent.jsx';
-import Header from './containers/Header.jsx';
-import Layout from './containers/Layout.jsx';
+import Header from './containers/Header/Header.jsx';
+import Layout from './containers/Layout/Layout.jsx';
 import Footer from '../../components/Footers/FooterWhite.jsx';
 
 import OpenInAppButton from '../../components/OpenInAppButton/OpenInAppButton.jsx';
