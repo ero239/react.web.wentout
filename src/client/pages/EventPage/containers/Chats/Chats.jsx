@@ -1,8 +1,9 @@
 import React, {PureComponent} from 'react';
 import {Link} from 'react-router-dom';
-import style from './style.scss';
-import stylePage from '../../style.scss';
 import classNames from 'classnames';
+
+import style from './style.scss';
+import stylePage from '../../../EventPage/style.scss';
 
 export default class Chats extends PureComponent {
   constructor(props) {
@@ -12,7 +13,7 @@ export default class Chats extends PureComponent {
     return (
       <section id="e-chats" className={classNames(style.eChats, stylePage.eGridMaxSize)}>
         <div classNam={style.eChatsTitleFlex}>
-          <h2 className={style.eSectionTitleValue}>Chats</h2>
+          <h2 className={stylePage.eSectionTitleValue}>Chats</h2>
         </div>
         <div className={style.eChatsMainWrapper}>
           <div className={style.eChatsMainInline}>

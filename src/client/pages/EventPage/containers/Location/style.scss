@@ -9,10 +9,13 @@
 .eLocationAddressFlex {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    font-style: normal;;
+    cursor: pointer;
+    padding: 0 0 0 7%;
 }
 .eLocationAddress {
+    font-size: 14px;
+    line-height: 16px;
     white-space: pre-line;
-    padding: 0 5% 0 7%;
-    color: rgba(0, 0, 0, 0.54);
-    cursor: default;
+    color: rgb(92, 92, 92);
 }

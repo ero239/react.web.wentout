@@ -33,11 +33,15 @@ export default class Location extends PureComponent {
                         <strong>Kremlin castle</strong><br/>
                          {this.state.location} 
                     </p> */}
-          <p className={style.eLocationAddress}>
+          <a
+            className={style.eLocationAddress}
+            target="_blank"
+            href={'https://www.google.com/maps/?q=@' + this.state.latitude + ',' + this.state.longitude}
+          >
             <strong>Tretyakov Gallery</strong>
             <br />
             Lavrushinsky per., 10, Moscow
-          </p>
+          </a>
         </address>
       </section>
     );
