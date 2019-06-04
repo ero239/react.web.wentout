@@ -1,137 +1,124 @@
-    .ePage {
-        height: auto;
-        width: auto;
-        
-    }
-    .eGrid {
-        height: auto;
-        width: auto;
-        display: grid;
-        display: -ms-grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto auto auto auto;
-    }
-    .eNotFound{
-        width: 100%;
-        height: 300px;
-        margin: 150px 0 0 0;
-    }
-    .eNotFoundText{
-        text-align: center;
-        p{
-            font-size: 17px;
-            letter-spacing: 0.2px;
-        }
-    }
-
-
-
+.ePage {
+    height: auto;
+    width: auto;
     
+}
+.eGrid {
+    height: auto;
+    width: auto;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+.eNotFound{
+    width: 100%;
+    height: 300px;
+    margin: 150px 0 0 0;
+}
+.eNotFoundText{
+    text-align: center;
+    p{
+        font-size: 17px;
+        letter-spacing: 0.2px;
+    }
+}
 
-    @media(min-width: 0px) {
-       
-        
-        .eGridMaxSize {
-            margin: auto;
-            min-width: 300px;
-            width: auto;
-            max-width: 700px;
-        }
-        .eSectionTitleValue {
-            margin: 0 auto 0 0;
-            padding-left: 20px;
-            font-weight: 600;
-        }
+@media(min-width: 0px) {
+    .eGridMaxSize {
+        margin: auto;
+        min-width: 300px;
+        width: auto;
+        max-width: 700px;
+    }
+    .eSectionTitleValue {
+        margin: 0 auto 0 0;
+        padding-left: 20px;
+        font-weight: 600;
+    }
 
-        .playButtonOuter {
-            position: relative;
-            display: block;
-            margin: -250px auto 0 auto;
-            width: 40px;
-            height: 40px;
+    .playButtonOuter {
+        position: relative;
+        display: block;
+        margin: -250px auto 0 auto;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 2;
+        &:hover {
             background-color: transparent;
-            cursor: pointer;
-            z-index: 2;
-            &:hover {
-                background-color: transparent;
-                .playButton {
-                    transform: scale(1.2);
-                    transition: all 200ms ease-in;
-                    opacity: 1;
-                }
+            .playButton {
+                transform: scale(1.2);
+                transition: all 200ms ease-in;
+                opacity: 1;
             }
         }
-        .playButton {
-            margin: 0 auto;
-            position: relative;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 30px 0 30px 60px;
-            border-color: transparent transparent transparent rgb(255, 255, 255);
-            opacity: .90;
-            transition: all 200ms ease-in;
-        }
-        .disableHover {
+    }
+    .playButton {
+        margin: 0 auto;
+        position: relative;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 0 30px 60px;
+        border-color: transparent transparent transparent rgb(255, 255, 255);
+        opacity: .90;
+        transition: all 200ms ease-in;
+    }
+    .disableHover {
+        pointer-events: none !important;
+        * {
             pointer-events: none !important;
-            * {
-                pointer-events: none !important;
-            }
         }
+    }
+ 
+    .eSectionTitleFlex {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .eSectionButton {
+        align-self: center;
+        background-color: rgb(255, 255, 255);
+        border-radius: 3rem;
+        border: 1px solid black;
+        color: rgb(0, 0, 0);
+        cursor: pointer;     
+        font-size: 12px;
+        font-weight: 200 !important;
+        line-height: 18px;
+        margin-left: auto;
+        margin-right: 20px;
+        max-height: 100%;
+        outline: none; 
+        overflow: hidden;
+        padding: 5px 6px!important;
+        position: relative;
+        text-decoration: none !important;
+        transition: 0.2s -webkit-transform ease-in-out;
+        transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
+        transition: 0.2s transform ease-in-out;
+        white-space: nowrap;
+        will-change: transform;
+        z-index: 0;
+    }
+}
 
-        
-        .eSectionTitleFlex {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-            display: flex;
-            display: -webkit-flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        .eSectionButton {
-            max-height: 100%;
-            white-space: nowrap;
-            font-size: 12px;
-            padding: 8px !important;
-            margin-left: auto;
-            align-self: center;
-            margin-right: 20px;
-            border: 1px solid black;
-            border-radius: 3rem;
-            color: rgb(0, 0, 0);
-            background-color: rgb(255, 255, 255);
-            font-weight: 200 !important;
-            overflow: hidden;
-            position: relative;
-            text-decoration: none !important;
+@media (min-width: 768px) {
+    .eSectionButton {
+        font-size: 13px;
+        padding: 10px;
+        &:hover{
+            background-color: black;
+            color: white;
             transition: 0.2s -webkit-transform ease-in-out;
             transition: 0.2s transform ease-in-out;
             transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
-            will-change: transform;
-            z-index: 0;
-            cursor: pointer;     
-            outline: none; 
         }
-        
-
-        
     }
-   
-    @media (min-width: 768px) {
-        
-        .eSectionButton {
-            font-size: 13px;
-            padding: 10px;
-            &:hover{
-                background-color: black;
-                color: white;
-                transition: 0.2s -webkit-transform ease-in-out;
-                transition: 0.2s transform ease-in-out;
-                transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
-            }
-        }
-        
-        
-    }
+}
 
-    
