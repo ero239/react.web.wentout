@@ -47,9 +47,9 @@
     display: -webkit-flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px 0 0 20px;
     p {
-        font-size: 13pt;
+        margin: 15px;
+        font-size: 16px;
         font-weight: 600;
     }
 }
@@ -59,9 +59,10 @@
     display: flex;
     display: -webkit-flex;
     justify-content: flex-start;
-    padding: 15px 0 0 0;
     p {
-        font-size: 11pt;
+        font-size: 14px;
+        line-height: 16px;
+        white-space: pre-wrap;
     }
 }
 

@@ -74,7 +74,9 @@ export default class EventsMediaLayout extends PureComponent {
             <div className={style.uLayoutEventsMediaArticleHeaderFlex}>
               <div className={style.uLayoutEventsMediaArticleHeaderLeft}>
                 <div className={style.uLayoutEventsMediaArticleHeaderLeftEventPhotoFlex}>
-                  <img src={'https://wallbox.ru/wallpapers/main/201129/sobaka-vzglead-belyy-3952db6.jpg'} />
+                  <Link to="/event/wegrw">
+                    <img src={'https://wallbox.ru/wallpapers/main/201129/sobaka-vzglead-belyy-3952db6.jpg'} />
+                  </Link>
                 </div>
                 <div className={style.uLayoutEventsMediaArticleHeaderLeftEventTitleFlex}>
                   <Link to="/event/wegrw">
