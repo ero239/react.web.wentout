@@ -53,13 +53,7 @@ export default class Header extends PureComponent {
         </main>
         <div id="uHeaderButtons" className={style.uHeaderButtonsGrid}>
           <div className={style.uHeaderButton}>
-            <span>Invite</span>
-          </div>
-          <div className={style.uHeaderButton}>
             <span>+ Follow</span>
-          </div>
-          <div className={style.uHeaderButton}>
-            <span>Message</span>
           </div>
         </div>
         <div id="uHeaderDescription" className={style.uHeaderDescriptionGrid}>

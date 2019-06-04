@@ -20,6 +20,7 @@ export default class Description extends PureComponent {
   };
 
   render = () => {
+    var _textClass = classNames(this.state.showAll ? style.eDescriptionTextValueLess : style.eDescriptionTextValueMore);
     return (
       <section id="e-description" className={classNames(style.eDescription, stylePage.eGridMaxSize)}>
         <div className={stylePage.eSectionTitleFlex}>
@@ -29,16 +30,8 @@ export default class Description extends PureComponent {
           </button>
         </div>
         <div className={style.eDescriptionTextFlex}>
-          {/* <p className={_eventdescription_text}>
-                        {this.state.description}
-                    </p>  */}
-          <Linkify
-            className={classNames(
-              this.state.showAll ? style.eDescriptionTextValueLess : style.eDescriptionTextValueMore
-            )}
-            properties={{target: '_blank', style: {color: 'blue'}}}
-          >
-            Третьяковская галерея открыла самую ожидаемую выставку года — ретроспективу Ильи Ефимовича Репина
+          <Linkify className={_textClass} properties={{target: '_blank', style: {color: 'blue'}}}>
+            Третьяковская ewrwe.com галерея открыла самую ожидаемую выставку года — ретроспективу Ильи Ефимовича Репина
             (1844–1930). Это крупнейший проект по объему подготовительной исследовательской работы, масштабу
             межмузейного сотрудничества и диапазону представленного материала. Экспозиция, расположенная на трех этажах
             самых крупных выставочных залов Новой Третьяковки, демонстрирует произведения мастера, созданные с 1870-х по

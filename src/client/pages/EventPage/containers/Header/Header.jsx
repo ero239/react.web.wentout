@@ -20,7 +20,7 @@ export default class Header extends PureComponent {
             timeEnd: this.props.timeEnd,
             views: this.props.views,
             photo: this.props.photo, */
-      title: 'Выставка картин Ильи Репина',
+      title: 'Выставка картин Ильи Репина 1§34  1254  31453 2453 4534 523453 efgerger er ger reg erger',
       nickname: 'tretyakovgallery',
       guests: '3432',
       timeStart: '1557487300',
@@ -147,6 +147,14 @@ export default class Header extends PureComponent {
             </div>
           </div>
         </main>
+        <div className={style.eHeaderButtonsGrid}>
+          <div className={style.eHeaderButton}>
+            <span>Go</span>
+          </div>
+          <div className={style.eHeaderButton}>
+            <span>Invite</span>
+          </div>
+        </div>
       </section>
     );
   }

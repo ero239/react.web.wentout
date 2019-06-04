@@ -4,21 +4,11 @@ import isEqual from 'react-fast-compare';
 import style from './style.scss';
 
 /* import LazyLoad from 'react-lazyload'; */
-import neo4j from 'neo4j-driver/lib/browser/neo4j-web';
 /* import { isMobile } from 'react-device-detect' */
 
 export default class Media extends React.Component {
   constructor(props) {
     super(props);
-
-    /* this.driver = neo4j.driver(
-            'bolt://localhost:7687',
-            neo4j.auth.basic(
-                'neo4j',
-                'tujhjd1997'
-            )
-        ); */
-    this.driver = neo4j.driver('bolt://178.128.174.121:7687', neo4j.auth.basic('ero', 'tujhjd1997'));
 
     this.state = {
       /* id: this.props.id, */
@@ -92,11 +82,6 @@ export default class Media extends React.Component {
         this.handleScroll = this.handleScroll.bind(this); */
   }
 
-  /**
-   * Re-render Container if some more items were added to array
-   * @param {*} nextProps
-   * @param {*} nextState
-   */
   shouldComponentUpdate(nextProps, nextState) {
     return !isEqual(this.state.array, nextState.array);
   }
