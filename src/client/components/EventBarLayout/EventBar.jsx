@@ -11,14 +11,14 @@ export default class EventBar extends PureComponent {
     console.log(this.props.photo);
     return (
       <Link to="/event/dfe" className={style.eventBar}>
-        <header className={style.eventBarHeaderGrid}>
+        <div className={style.eventBarHeaderGrid}>
           <div className={style.eventBarHeaderCreatorNicknameGrid}>
             <a className={style_fonts.aLink}>@{this.props.u_nickname}</a>
           </div>
           <div className={style.eventBarHeaderTimeGrid}>
             <p className={style_fonts.aTime}>in 10 months</p>
           </div>
-        </header>
+        </div>
         <div className={style.eventBarCreatorPhotoGrid}>
           <img src={this.props.u_photo} alt="" />
         </div>
@@ -48,7 +48,7 @@ export default class EventBar extends PureComponent {
             {this.props.guests} people go
           </p>
         </div>
-        <footer className={style.eventBarFooter}>
+        <div className={style.eventBarFooter}>
           <div className={style.eventBarFooterButtonOpenGrid}>
             <a href={'/event=' + this.props.id} className={style.eventBarFooterButton}>
               <p className={style_fonts.aButton}>Open</p>
@@ -63,7 +63,7 @@ export default class EventBar extends PureComponent {
             </a>
             {/* <button type="button" onClick={this.openMapTab(this.props.latitude, this.props.longitude)} className="m-topevents-cover-item-event-button-showonmap">Show on Map</button> */}
           </div>
-        </footer>
+        </div>
       </Link>
     );
   }

@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 // global styles
-import './style.scss';
+import './styleGlobal.scss';
 import './style_modules.css';
 
 // apply polyfill

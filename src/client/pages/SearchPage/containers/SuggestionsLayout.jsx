@@ -30,15 +30,15 @@ export default class Header extends PureComponent {
             <span>Sport</span>
             <span>in Moscow</span>
           </header>
-          <main className={style.sSuggestionsLayoutSuggestionBoxMain}>
+          <div className={style.sSuggestionsLayoutSuggestionBoxMain}>
             <div className={style.sSuggestionsLayoutSuggestionBoxMainFlex}>
               <NewEventBar />
             </div>
             <div className={style.sSuggestionsLayoutSuggestionBoxMainFlex}>
-              <NewEventBar_1 />
+              <NewEventBar />
             </div>
             <div className={style.sSuggestionsLayoutSuggestionBoxMainFlex}>
-              <NewEventBar_2 />
+              <NewEventBar />
             </div>
             <div className={style.sSuggestionsLayoutSuggestionBoxMainFlex}>
               <NewEventBar />
@@ -46,7 +46,7 @@ export default class Header extends PureComponent {
             <div className={style.sSuggestionsLayoutSuggestionBoxMainFlex}>
               <EventBarShowAll />
             </div>
-          </main>
+          </div>
         </div>
         <div className={style.sSuggestionsLayoutSuggestionBox}>
           <header className={style.sSuggestionsLayoutSuggestionBoxHeader}>

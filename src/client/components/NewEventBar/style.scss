@@ -1,114 +1,105 @@
+@import "../../styleGlobal.scss";
+
 .eBar{
+    margin: 20px 10px;
     display: inline-flex;
     flex-direction: column;
-    width: auto;
-    height: auto;
 }
 .eBarHeader{
+    @include displayFlex();
     width: 100%;
-    display: flex;
     align-items: center;
 }
 .eBarHeaderCreator{
+    @include displayFlex();
     margin: 0 0 0 5px;
     width: auto;
     height: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
     img{
         border-radius: 9999px;
     }
-    a:nth-child(2){
+    span{
+        color: rgb(65, 65, 65);
+        font-size: 14px;
+        font-weight: 500;
         margin: 0 5px;
         overflow: hidden;
         text-align: left;
         text-overflow: ellipsis;
         width: auto;
-    }
-    span{
-        font-size: 14px;
-        font-weight: 500;
+        &:hover{
+            color: rgb(59, 126, 194);
+        }
     }
 }
 .eBarHeaderTime{
+    @include displayFlex();
     align-items: center;
-    color: #b8b7b7;
-    display: flex;
+    color: rgb(184, 183, 183);
     height: 100%;
     margin: 0 5px 0 auto;
-    width: auto;
 }
 .eBarImg{
-    width: auto;
-    height: auto;
     img{
-        border-radius: 18px;
-        box-shadow: 2px 2px 8px 1px rgb(175, 175, 175);
+        border-radius: 5px;
+        box-shadow: 0 8px 14px rgba(14,21,47,.1),0 2px 36px rgba(14,21,47,.08);
     }
 }
 .eBarInfo{
     width: 100%;
-    height: auto;
 }
 .eBarInfoMetrix{
+    padding: 2px 0;
     width: 100%;
-    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: default;
-    /* i{
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjAwQQJiPpWX8tAAAAlElEQVQoz32RwQ3CMBAEByPyohKcBqiNGkBWohRDCFU4NAAlOB+E0fGwLJMo9txz9rQ6GyI1hpGJiRFDzYyKji/yN56WKun7TMYZYqRb1YLQhG6fDXj0lhNHcije8MjuC4Ld4NiTxymEEqJ4FQNPRV8MXEEXzzwAtNmAiU89rOobu/QbzaLog0k6oLlgcTgs59AN8AMeqIJuoyPSYQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wMy0wNFQxNTozODozNSswMTowMM1r7JAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDMtMDRUMTU6Mzg6MzUrMDE6MDC8NlQsAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==);
-    } */
     i{
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEUAAACAgIC4uLi4tra4t7e4t7e3t7e3t7e8tLS4t7e4t7e4t7e4t7e4uLi4uLi/v7+5ubm4t7e4t7e5ubm4traqqqq5t7e4t7e3t7e3t7e3t7e4t7fMzMy4t7e4t7e6tra4t7e4t7e5tra4uLi4tra3t7e4t7e3t7e4t7cAAABjto3ZAAAAKHRSTlMAAlqz5vqyWSLO+M3qwUQERcPpIZMDlczEWEOxBfnlRrDFV5aXy8Ygy8KvLwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfjAwQUAwM9zSfeAAAAj0lEQVQI12WOyQKCMBBDU6gsRSiLFRAKiKL5/y+URfBgbi+TzAwACMeVJ+n5AquCkFRSkVGw4plxoqHTjHkxh0NetqC5shRwGH97MBVruLxhV8oGUumDW9vBSvwk1d/cY3JwzwE+M7Pvv3OEiPjYDPPkNJ8OclZpi7Z/MX8vflGSVlpyKraeqJvOdsO4/PkBS60KrJmRXKkAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDMtMDRUMTk6MDM6MDMrMDE6MDDbjPpEAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTAzLTA0VDE5OjAzOjAzKzAxOjAwqtFC+AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=);  
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjU2LDBDMTE0LjgzNywwLDAsMTE0LjgzNywwLDI1NnMxMTQuODM3LDI1NiwyNTYsMjU2czI1Ni0xMTQuODM3LDI1Ni0yNTZTMzk3LjE2MywwLDI1NiwweiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojQjhCN0I3IiBkYXRhLW9sZF9jb2xvcj0iI2I4YjdiNyI+PC9wYXRoPgoJPC9nPgo8L2c+PC9nPiA8L3N2Zz4=);  
     }
 }
 .eBarInfoMetrixBlock{
     margin: 0;
-    width: auto;
     display: flex;
     align-items: baseline;
+    color: #b8b7b7;
 }
 .eBarInfoTitle{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     h3{
         overflow: hidden;
         text-overflow: ellipsis;
         text-align: center;
         white-space: pre-wrap;
-        letter-spacing: -.004em;
+        letter-spacing: normal;
     }
 }
 .eBarInfoAddress{
+    @include displayFlex();
     align-items: center;
     color: #b8b7b7;
-    display: flex;
     height: auto;
     justify-content: center;
     max-width: 100%;
     width: auto;
     i{
+        margin: 0 2px;
         background-repeat: no-repeat;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjAwQPHwRVraOxAAAA90lEQVQoz3XROy/DARSG8V8VEQ22phGXSRqJiEsiMRRpjIwsEgsfQGLiE4jFYO2mYhJh1KEkXUVcItKUCjF0qNFGDVT/bXi2855nOHkPVcJW5ZSV5awIayAi49AYGHfkVKRe2LcFoqJg215wPeJak4gTeXnH2oXdGoYmMCft06YHcXFPNnxIm68JPYpISKmoSJnCo96aUBJDwSSYVEBMqXZDUhb9ClJSCvqQlQyeeWEWnRYt6EDSpVBQmHCv7XdqdmWm2t83r4aMOvuZ1lXsNHbZpWgQxLzo9gdLzoVwYM0/ZCxLuNHynzDg2Z3pYFT/1jet3u0Goy/XwDld/Vp2mAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wMy0wNFQxNDozMTowNCswMTowMMQQEogAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDMtMDRUMTQ6MzE6MDQrMDE6MDC1Tao0AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==);
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTQuNzU3IDU0Ljc1NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTQuNzU3IDU0Ljc1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBjbGFzcz0iIj48Zz48cGF0aCBkPSJNNDAuOTQsNS42MTdDMzcuMzE4LDEuOTk1LDMyLjUwMiwwLDI3LjM4LDBjLTUuMTIzLDAtOS45MzgsMS45OTUtMTMuNTYsNS42MTdjLTYuNzAzLDYuNzAyLTcuNTM2LDE5LjMxMi0xLjgwNCwyNi45NTIgIEwyNy4zOCw1NC43NTdMNDIuNzIxLDMyLjZDNDguNDc2LDI0LjkyOSw0Ny42NDMsMTIuMzE5LDQwLjk0LDUuNjE3eiBNMjcuNTU3LDI2Yy0zLjg1OSwwLTctMy4xNDEtNy03czMuMTQxLTcsNy03czcsMy4xNDEsNyw3ICBTMzEuNDE2LDI2LDI3LjU1NywyNnoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0I4QjdCNyIgZGF0YS1vbGRfY29sb3I9IiNiOGI3YjciPjwvcGF0aD48L2c+IDwvc3ZnPg==);
     }
     address{
         font-style: normal;
-        letter-spacing: -.004em;
         margin: 0;
         overflow: hidden;
         text-align: left;
         text-overflow: ellipsis;
         width: auto;
-        &:hover{
-            text-decoration-line: underline;
-        }
+        text-decoration: none;
     }
 }
 
@@ -121,19 +112,19 @@
             width: 30px;
             height: 30px;
         }
-        a:nth-child(2){
+        span{
             max-width: 150px;
         }
     }
     .eBarHeaderTime{
         span{
-            font-size: 11px;
+            font-size: 10px;
         }
     }
     .eBarImg{
         img{
-            width: 270px;
-            height: 170px;
+            width: 300px;
+            height: 187,5px;
         }
     }
     .eBarInfoMetrix{
@@ -141,45 +132,47 @@
             margin: 0 7px;
             width: 16px;
             height: 16px;
-            background-size: 4px;
+            background-size: 3px;
         }
     }
     .eBarInfoMetrixBlock{
-        height: 15px;
+        img{
+            margin: auto 3px;
+            width: 12px;
+            height: 12px;
+        }
         span{
             font-weight: 500;
-            font-size: 14px;
+            font-size: 12px;
             line-height: 16px;
-            color: #b8b7b7;
         }
         p{
             margin: 0 0 0 4px;
-            font-size: 12px;
+            font-size: 10px;
             font-weight: 500;
             line-height: 16px;
-            color: #b8b7b7;
         }
     }
     .eBarInfoTitle{
         h3{
-            margin: 9px 0 0 0;
+            margin: 3px 0 0 0;
             line-height: 18px;
-            font-size: 16px;
-            font-weight: 500;
-            max-height: 37px;
+            font-size: 15px;
+            font-weight: 400;
+            max-height: 56px;
         }
     }
     .eBarInfoAddress{
         margin: 5px 3px 0 0;
         i{
-            width: 13px;
-            height: 13px;
-            background-size: 13px;            
+            width: 11px;
+            height: 11px;
+            background-size: 11px;            
         }
         address{
-            max-width: 240px;
+            max-width: 290px;
             line-height: 16px;
-            font-size: 13px;
+            font-size: 12px;
         }
     }
 }
@@ -192,8 +185,8 @@
             width: 35px;
             height: 35px;
         }
-        a:nth-child(2){
-            max-width: 200px;
+        span{
+            max-width: 230px;
         }
     }
     .eBarHeaderTime{
@@ -203,39 +196,33 @@
     }
     .eBarImg{
         img{
-            width: 320px;
-            height: 200px;
-        }
-    }
-    .eBarInfoMetrix{
-        i{
-            margin: 0 7px;
-            width: 16px;
-            height: 16px;
-            background-size: 4px;
+            width: 370px;
+            height: 230px;
         }
     }
     .eBarInfoMetrixBlock{
-        height: 15px;
+        img{
+            margin: auto 5px;
+            width: 14px;
+            height: 14px;
+        }
         span{
-            font-weight: 500;
-            font-size: 15px;
+            font-size: 14px;
             line-height: 17px;
         }
         p{
             margin: 0 0 0 4px;
             font-size: 13px;
-            font-weight: 500;
             line-height: 16px;
         }
     }
     .eBarInfoTitle{
         h3{
-            margin: 9px 0 0 0;
-            line-height: 18px;
+            margin: 5px 0 0 0;
+            line-height: 20px;
             font-size: 17px;
             font-weight: 500;
-            max-height: 37px;
+            max-height: 60px;
         }
     }
     .eBarInfoAddress{
