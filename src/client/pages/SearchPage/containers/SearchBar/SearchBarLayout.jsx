@@ -1,11 +1,11 @@
 import React, {PureComponent} from 'react';
 
-import style from '../style.scss';
+import style from './style.scss';
 
-import ParameterCategory from '../components/ParameterCategory.jsx';
-import ParameterDate from '../components/ParameterDate.jsx';
-import ParameterGeo from '../components/ParameterGeo.jsx';
-import HashTag from '../components/HashTag.jsx';
+import ParameterCategory from './components/ParameterCategory.jsx';
+import ParameterDate from './components/ParameterDate.jsx';
+import ParameterGeo from './components/ParameterGeo.jsx';
+import HashTag from './components/HashTag.jsx';
 
 export default class SearchBar extends PureComponent {
   constructor(props) {

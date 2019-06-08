@@ -7,9 +7,9 @@ import _ from 'lodash';
 import style from './style.scss';
 
 import NavBar from '../../components/NavBar/NavBarEvent.jsx';
-import SearchBarLayout from './containers/SearchBarLayout.jsx';
-import SuggestionsLayout from './containers/SuggestionsLayout.jsx';
-import ResultsLayout from './containers/ResultsLayout.jsx';
+import SearchBarLayout from './containers/SearchBar/SearchBarLayout.jsx';
+import SuggestionsLayout from './containers/Suggestions/SuggestionsLayout.jsx';
+import ResultsLayout from './containers/Results/ResultsLayout.jsx';
 import Footer from '../../components/Footers/FooterWhite.jsx';
 
 import OpenInAppButton from '../../components/OpenInAppButton/OpenInAppButton.jsx';

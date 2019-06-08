@@ -6,13 +6,9 @@ import dayjs from 'dayjs';
 import AdvancedFormat from 'dayjs/plugin/relativeTime';
 dayjs.extend(AdvancedFormat);
 import classNames from 'classnames';
-import EventBar from '../../../components/EventBarLayout/EventBar.jsx';
-import NewEventBar from '../../../components/NewEventBar/NewEventBar.jsx';
-import NewEventBar_1 from '../../../components/NewEventBar/NewEventBar.1.jsx';
-import NewEventBar_2 from '../../../components/NewEventBar/NewEventBar.2.jsx';
-import EventBarShowAll from '../../../components/EventBarLayout/EventBarLayoutShowAll.jsx';
-import style from '../style.scss';
-import style_fonts from '../../../style_fonts.scss';
+import EventBar from '../../../../components/EventBar/EventBar.jsx';
+import EventBarShowAll from '../../../../components/EventBarLayout/EventBarLayoutShowAll.jsx';
+import style from './style.scss';
 
 export default class Header extends PureComponent {
   constructor(props) {
@@ -28,20 +24,20 @@ export default class Header extends PureComponent {
         <div className={style.sSuggestionsLayoutSuggestionBox}>
           <header className={style.sSuggestionsLayoutSuggestionBoxHeader}>
             <span>Sport</span>
-            <span>in Moscow</span>
+            <span>Moscow</span>
           </header>
           <div className={style.sSuggestionsLayoutSuggestionBoxMain}>
             <div className={style.sSuggestionsLayoutSuggestionBoxMainFlex}>
-              <NewEventBar />
+              <EventBar />
             </div>
             <div className={style.sSuggestionsLayoutSuggestionBoxMainFlex}>
-              <NewEventBar />
+              <EventBar />
             </div>
             <div className={style.sSuggestionsLayoutSuggestionBoxMainFlex}>
-              <NewEventBar />
+              <EventBar />
             </div>
             <div className={style.sSuggestionsLayoutSuggestionBoxMainFlex}>
-              <NewEventBar />
+              <EventBar />
             </div>
             <div className={style.sSuggestionsLayoutSuggestionBoxMainFlex}>
               <EventBarShowAll />

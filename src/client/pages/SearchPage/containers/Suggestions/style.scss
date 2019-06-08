@@ -1,0 +1,184 @@
+.sSuggestionsLayout{
+    width: 100%;
+    height: auto;
+}
+.sSuggestionsLayoutSuggestionBox{
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-evenly;
+    margin: 40px auto 0 auto;
+    max-width: 1130px;
+    min-width: 320px;
+    overflow: hidden;
+    width: 95%;
+}
+.sSuggestionsLayoutSuggestionBoxHeader{
+    align-items: flex-end;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    height: 40px;
+    padding: 0 10px 0 15px;
+    span{
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        align-self: baseline;
+        &:nth-child(2){
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            color: rgb(184, 183, 183);
+            font-size: 12px;
+            margin: 0 0 0 auto;
+            overflow: hidden;
+            text-align: right;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
+.sSuggestionsLayoutSuggestionBoxMain{
+    height: auto;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    text-align: center;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    display: inline-flex;
+}
+.sSuggestionsLayoutSuggestionBoxMainFlex{
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    margin: 0 5px;
+}
+.sSuggestionsLayoutSuggestionBoxMainShowAll{
+    height: 100%;
+    width: 100px;
+    margin: 0 10px;
+    box-shadow: 1px 1px 5px rgba(77, 77, 77, 0.418);
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+.sSuggestionsLayoutCategoriesBox{
+    margin: 40px auto 0 auto;
+    width: auto;
+    min-width: 320px;
+    max-width: 1130px;
+    height: auto;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    text-align: center;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.sSuggestionsLayoutCategoriesBoxItemWrapper{
+    display: inline-flex;
+    height: 100%;
+    width: 290px;
+    justify-content: center;
+    align-items: center;
+}
+.sSuggestionsLayoutCategoriesBoxItem{
+    height: 380px;
+    min-width: 250px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 12px rgba(170, 170, 170, 0.849);
+    img{
+        position: relative;
+        object-fit: cover;
+        display: inline-block;    
+        border-radius: 12px;
+        width: 250px;
+        height: 380px;
+        vertical-align: bottom;
+        background-position: top left;
+        background-repeat: no-repeat;
+        -webkit-background-size: 300px 400px;
+        -moz-background-size: 300px 400px;
+        -o-background-size: 300px 400px;
+        background-size: 300px 400px;
+        cursor: pointer;
+    }
+}
+.sSuggestionsLayoutCategoriesBoxItemShadow{
+    position: relative;
+    width: 250px;
+    height: 381px;
+    margin: -379px 0 0 0;
+    border-radius: 0 0 12px 12px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, .99) 20%,rgba(255, 255, 255, .4) 50% , rgba(255, 255, 255, 0.001) 80%);
+}
+.sSuggestionsLayoutCategoriesBoxItemInfoWrapper{
+    position: relative;
+    width: 250px;
+    height: 130px;
+    margin: -130px 0 0 0;
+    border-radius: 0 0 12px 12px;
+    display: flex;
+}
+.sSuggestionsLayoutCategoriesBoxItemInfo{
+    position: relative;
+    max-width: 250px;
+    height: auto;
+    margin: auto;
+    max-height: 160px;
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sSuggestionsLayoutCategoriesBoxItemInfoItem{
+    width: auto;
+    height: auto;
+    margin: 2px 3px;
+}
+
+@media(min-width: 0px){
+    .sSuggestionsLayoutSuggestionBoxHeader{
+        span{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+        }
+        &:nth-child(2){
+            width: 100px;
+        }
+    }
+}
+
+@media(min-width: 400px){
+    .sSuggestionsLayoutSuggestionBoxHeader{
+        span{
+            &:nth-child(2){
+                width: 200px;
+            }
+        }
+    }
+}
+@media(min-width: 768px){
+    .sSuggestionsLayoutSuggestionBoxHeader{
+        padding: 0 10px 0 20px;
+        span{
+            font-size: 25px;
+            &:nth-child(2){
+                font-size: 16px;
+                width: 320px;
+            }
+        }
+    }
+    .sSuggestionsLayoutSuggestionBoxMainShowAll{
+        margin: -50px 10px ;
+    }
+}

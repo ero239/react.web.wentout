@@ -7,28 +7,27 @@
 }
 .eBarHeader{
     @include displayFlex();
-    width: 100%;
+    
     align-items: center;
 }
 .eBarHeaderCreator{
     @include displayFlex();
-    margin: 0 0 0 5px;
-    width: auto;
     height: 100%;
     align-items: center;
     justify-content: center;
     img{
+        margin: 2px 2px 2px 5px;
         border-radius: 9999px;
     }
     span{
         color: rgb(65, 65, 65);
         font-size: 14px;
         font-weight: 500;
-        margin: 0 5px;
+        margin: 0 2px;
         overflow: hidden;
         text-align: left;
         text-overflow: ellipsis;
-        width: auto;
+        white-space: nowrap;
         &:hover{
             color: rgb(59, 126, 194);
         }
@@ -70,23 +69,19 @@
 }
 .eBarInfoTitle{
     width: 100%;
-    height: auto;
     h3{
         overflow: hidden;
         text-overflow: ellipsis;
         text-align: center;
         white-space: pre-wrap;
-        letter-spacing: normal;
     }
 }
 .eBarInfoAddress{
     @include displayFlex();
     align-items: center;
     color: #b8b7b7;
-    height: auto;
     justify-content: center;
     max-width: 100%;
-    width: auto;
     i{
         margin: 0 2px;
         background-repeat: no-repeat;
@@ -97,20 +92,19 @@
         margin: 0;
         overflow: hidden;
         text-align: left;
-        text-overflow: ellipsis;
-        width: auto;
         text-decoration: none;
+        text-overflow: ellipsis;
     }
 }
 
 @media(min-width: 0px){
-    .eBarHeader{
-        height: 35px;
+    .eBar{
+        width: 300px;
     }
     .eBarHeaderCreator{
         img{
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
         }
         span{
             max-width: 150px;
@@ -118,7 +112,7 @@
     }
     .eBarHeaderTime{
         span{
-            font-size: 10px;
+            font-size: 9px;
         }
     }
     .eBarImg{
@@ -129,7 +123,7 @@
     }
     .eBarInfoMetrix{
         i{
-            margin: 0 7px;
+            margin: 0 2px;
             width: 16px;
             height: 16px;
             background-size: 3px;
@@ -137,19 +131,14 @@
     }
     .eBarInfoMetrixBlock{
         img{
-            margin: auto 3px;
+            margin: auto 2px;
             width: 12px;
             height: 12px;
         }
         span{
+            margin: auto 2px;
             font-weight: 500;
             font-size: 12px;
-            line-height: 16px;
-        }
-        p{
-            margin: 0 0 0 4px;
-            font-size: 10px;
-            font-weight: 500;
             line-height: 16px;
         }
     }
@@ -177,6 +166,9 @@
     }
 }
 @media(min-width: 768px){
+    .eBar{
+        width: 370px;
+    }
     .eBarHeader{
         height: 45px;
     }

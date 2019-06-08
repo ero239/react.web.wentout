@@ -4,10 +4,9 @@ import dayjs from 'dayjs';
 import AdvancedFormat from 'dayjs/plugin/relativeTime';
 dayjs.extend(AdvancedFormat);
 import classNames from 'classnames';
-import EventBar from '../../../components/EventBarLayout/EventBar.jsx';
+import EventBar from '../../../../components/EventBar/EventBar.jsx';
 
-import style from '../style.scss';
-import style_fonts from '../../../style_fonts.scss';
+import style from './style.scss';
 
 export default class Header extends PureComponent {
   constructor(props) {

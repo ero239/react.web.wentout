@@ -4,7 +4,7 @@ import style from './style.scss';
 import style_fonts from '../../style_fonts.scss';
 import classNames from 'classnames';
 
-export default class NewEventBar extends PureComponent {
+export default class EventBar extends PureComponent {
   render() {
     return (
       <div className={style.eBar}>
